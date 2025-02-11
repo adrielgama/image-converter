@@ -19,7 +19,7 @@
 - [Next 15](https://nextjs.org/) for the framework.
 - [Tailwind CSS V4](https://tailwindcss.com/) for the styling.
 - [React Dropzone](https://react-dropzone.js.org/) for drag-and-drop functionality.
-- [Shadcn](https://ui.shadcn.com/docs) for toast notifications.
+- [Shadcn](https://ui.shadcn.com/docs) for components.
 
 ## Getting Started
 
