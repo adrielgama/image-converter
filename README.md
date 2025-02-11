@@ -1,36 +1,95 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Image Converter
+
+![Image Converter OG](/og/og-image.png)
+
+**Image Converter** is a web application that allows users to convert PNG images to various formats, including WebP, ICO, and compressed PNG. It provides a simple and intuitive interface for optimizing and converting images with ease.
+
+## Features
+
+- **Convert PNG to WebP**: Convert PNG images to WebP format without compression.
+- **Convert PNG to Compressed WebP**: Convert PNG images to WebP format with adjustable quality settings.
+- **Convert PNG to ICO**: Convert PNG images to ICO format for favicons.
+- **Compress PNG**: Compress PNG images with adjustable quality settings.
+- **Drag-and-Drop Support**: Easily upload images by dragging and dropping them into the app.
+- **Responsive Design**: Works seamlessly on both desktop and mobile devices.
+- **Real-Time Preview**: Preview the uploaded image before conversion.
+
+## Technologies Used
+
+- [Next 15](https://nextjs.org/) for the framework.
+- [Tailwind CSS V4](https://tailwindcss.com/) for the styling.
+- [React Dropzone](https://react-dropzone.js.org/) for drag-and-drop functionality.
+- [Shadcn](https://ui.shadcn.com/docs) for toast notifications.
 
 ## Getting Started
 
-First, run the development server:
+### Installation
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. Clone the repository:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+   ```bash
+   git clone https://github.com/your-username/image-converter.git
+   ```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+2. Navigate to the project directory:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+   ```bash
+   cd image-converter
+   ```
 
-## Learn More
+3. Install dependencies:
 
-To learn more about Next.js, take a look at the following resources:
+   ```bash
+   pnpm install
+   # or
+   npm install
+   # or
+   yarn install
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4. Start the development server:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+   ```bash
+   pnpm dev
+   # or
+   npm run dev
+   # or
+   yarn dev
+   ```
 
-## Deploy on Vercel
+5. Open your browser and visit `http://localhost:3000` to view the application.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Usage
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. **Upload an Image**:
+   - Drag and drop a PNG image into the upload area, or click to select a file from your computer.
+
+2. **Select Conversion Format**:
+   - Choose the desired format from the tabs:
+     - **WebP**: Convert to WebP without compression.
+     - **WebP Compressed**: Convert to WebP with adjustable quality.
+     - **ICO**: Convert to ICO format.
+     - **PNG Compressed**: Compress PNG with adjustable quality.
+
+3. **Adjust Quality (if applicable)**:
+   - Use the slider to adjust the quality for compressed formats.
+
+4. **Convert**:
+   - Click the "Convert" button to start the conversion process.
+   - Once the conversion is complete, the converted image will be downloaded automatically.
+
+5. **Notifications**:
+   - Success or error messages will be displayed as toast notifications.
+
+## Contributing
+
+Contributions are welcome! If you'd like to contribute to this project, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bugfix.
+3. Commit your changes and push the branch.
+4. Submit a pull request.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
