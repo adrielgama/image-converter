@@ -1,12 +1,8 @@
 import type { Metadata } from 'next'
-import { Montserrat, Inter } from 'next/font/google'
+import { Montserrat } from 'next/font/google'
 import { Toaster } from '@/components/ui/sonner'
 
 import './globals.css'
-
-const inter = Inter({
-  subsets: ['latin'],
-})
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -24,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${montserrat.className} ${inter.className}`}>
+      <body className={`${montserrat.className}`}>
         {children}
         <Toaster richColors theme="light" position="bottom-center" />
       </body>
