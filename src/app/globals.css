@@ -1,16 +1,77 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @plugin "tailwindcss-animate";
 
 @custom-variant dark (&:is(.dark *));
 
 :root {
-    --radius: 0.6rem;
+  --radius: 0.6rem;
 }
 
 @theme inline {
-    --radius-sm: calc(var(--radius) - 4px);
-    --radius-md: calc(var(--radius) - 2px);
-    --radius-lg: var(--radius);
-    --radius-xl: calc(var(--radius) + 4px);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+@keyframes moveHorizontal {
+  0% {
+    transform: translateX(-50%) translateY(-10%);
+  }
+  50% {
+    transform: translateX(50%) translateY(10%);
+  }
+  100% {
+    transform: translateX(-50%) translateY(-10%);
+  }
+}
+
+@keyframes moveInCircle {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes moveVertical {
+  0% {
+    transform: translateY(-50%);
+  }
+  50% {
+    transform: translateY(50%);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+@theme {
+  --animation-first: moveVertical 30s ease infinite;
+  --animation-second: moveInCircle 20s reverse infinite;
+  --animation-third: moveInCircle 40s linear infinite;
+  --animation-fourth: moveHorizontal 40s ease infinite;
+  --animation-fifth: moveInCircle 20s ease infinite;
+}
+
+/* Utilização das animações com Tailwind */
+.animate-first {
+  animation: var(--animation-first);
+}
+.animate-second {
+  animation: var(--animation-second);
+}
+.animate-third {
+  animation: var(--animation-third);
+}
+.animate-fourth {
+  animation: var(--animation-fourth);
+}
+.animate-fifth {
+  animation: var(--animation-fifth);
 }
