@@ -1,6 +1,6 @@
 # Image Converter
 
-![Image Converter OG](/og/og-image.png)
+![Image Converter OG](/public/og/og-image.png)
 
 **Image Converter** is a web application that allows users to convert PNG images to various formats, including WebP, ICO, and compressed PNG. It provides a simple and intuitive interface for optimizing and converting images with ease.
 
