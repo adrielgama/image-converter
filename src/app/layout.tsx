@@ -32,11 +32,11 @@ export const metadata: Metadata = {
     title: 'Image Converter',
     description:
       'Convert PNG images to WebP, ICO, or compress them with ease. A fast and simple tool for optimizing your images.',
-    url: 'https://converter.adrielgama.dev',
+    url: 'https://image-converter.adrielgama.dev',
     siteName: 'Image Converter',
     images: [
       {
-        url: 'https://converter.adrielgama.dev/og/og-image.png',
+        url: 'https://image-converter.adrielgama.dev/og/og-image.png',
         width: 1200,
         height: 630,
         alt: 'Image Converter - Optimize Your Images',
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     title: 'Image Converter',
     description:
       'Convert PNG images to WebP, ICO, or compress them with ease. A fast and simple tool for optimizing your images.',
-    images: ['https://imageconverter.com/twitter-image.png'],
+    images: ['https://image-converter.adrielgama.dev/og/og-image.png'],
   },
 }
 
